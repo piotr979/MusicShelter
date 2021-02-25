@@ -1,0 +1,180 @@
+.entry-information {
+  display: grid;
+
+  grid-template-columns: 1fr;
+}
+.entry-information-name {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  text-align: center;
+}
+.entry-information-name h1 {
+  font-size: 2rem;
+}
+.entry-information-image {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 200px;
+  height: 200px;
+
+  justify-self: center;
+  transition: all 0.4s;
+  border-radius: 37px;
+  box-shadow: 2px 2px 17px #8d8d8d;
+}
+
+.entry-information-details {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.entry-information-row:first-child {
+  margin-top: 2rem;
+}
+.entry-albums-list {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.entry-information-row {
+  display: grid;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0.5rem;
+  justify-content: space-between;
+  margin: 0 0.5rem;
+  grid-template-columns: 17% 48% 35%;
+}
+
+.entry-information-row-icon {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-top: 2px;
+  padding: 4px;
+  border-radius: 8px;
+  width: 30px;
+  height: auto;
+}
+.alarm {
+  background-color: var(--green-3);
+}
+.country {
+  background-color: var(--purple-3);
+}
+.genre {
+  background-color: var(--red-3);
+}
+.website {
+  background-color: var(--yellow-3);
+}
+.entry-information-row-text {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: left;
+}
+.entry-information-row-text h4 {
+  font-size: 0.875rem;
+  padding: 0;
+  margin: 0;
+}
+.entry-information-row-text small {
+  padding-top: 8px;
+  font-size: 0.6rem;
+  display: block;
+  color: var(--secondary-text);
+}
+.entry-information-row-data {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  text-align: right;
+  justify-self: right;
+}
+.entry-information-row-data h4 {
+  color: var(--secondary-text);
+  font-size: 0.875rem;
+  padding: 0;
+}
+.entry-description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+.about-entry {
+  text-align: center;
+  padding-top: 3rem;
+}
+.biography {
+  text-align: center;
+  margin: 0 1rem;
+}
+@media only screen and (min-width: 400px) {
+  .entry-information-details {
+    width: 80%;
+    justify-self: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .entry-information {
+    padding-top: 2rem;
+    grid-template-columns: 60% 40%;
+  }
+  .entry-information-name {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .entry-information-image {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 260px;
+    height: 260px;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .entry-information-details {
+    width: 80%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .entry-information-row:first-child {
+    margin-top: 0rem;
+  }
+  .entry-information-details > div:not(:first-child) {
+    margin-top: 2rem;
+  }
+  .entry-information-row {
+    border: 1px dashed;
+  }
+  .entry-information-row:first-child {
+    border-color: var(--green-3);
+  }
+  .entry-information-row:nth-child(2) {
+    border-color: var(--purple-3);
+  }
+  .entry-information-row:nth-child(3) {
+    border-color: var(--red-3);
+  }
+  .entry-information-row:last-child {
+    border-color: var(--yellow-2);
+  }
+
+  .entry-information-row-text h4,
+  .entry-information-row-data h4 {
+    font-size: 1rem;
+  }
+  .entry-albums-list {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .about-entry {
+    margin-top: 0rem;
+  }
+  .entry-description {
+    margin: 0 1rem 0rem 1rem;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .entry-information-name h1 {
+    font-size: 2rem;
+  }
+}
